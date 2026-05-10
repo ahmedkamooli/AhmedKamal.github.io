@@ -33,7 +33,7 @@
   --font-mono:    'Geist Mono', 'SF Mono', Menlo, monospace;
 
   /* Layout */
-  --max-width: 1100px;
+  --max-width: 1400px;
   --radius-sm: 6px;
   --radius-md: 10px;
 }
@@ -46,7 +46,7 @@ body {
   background: var(--bg-base);
   color: var(--text-secondary);
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 24px;
   line-height: 1.75;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
