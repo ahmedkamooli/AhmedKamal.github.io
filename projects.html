@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Ahmed Kamal</title>
+  <meta name="description" content="Engineering and software projects." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Ahmed Kamal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <section class="hero">
+        <p class="eyebrow fade-in">projects</p>
+        <h1 class="fade-in">Things I've Built</h1>
+        <p class="lead fade-in">
+          <!-- EDIT: replace this with a short framing paragraph -->
+          A mix of engineering competition projects, software experiments, and research
+          implementations. The four below are the ones I'd want a recruiter or admissions
+          officer to see first.
+        </p>
+      </section>
+
+      <!-- ========== PROJECT 1 ========== -->
+      <section id="ppo-ammonia">
+        <div class="section-head">
+          <h2><i class="ti ti-cpu" style="color:var(--accent); font-size:22px; margin-right:8px; vertical-align:-3px;" aria-hidden="true"></i>PPO &amp; SAC Ammonia Env</h2>
+          <span style="font-size:12px; color:var(--text-faint); font-family:var(--font-mono);">2025</span>
+        </div>
+        <p style="margin-bottom: 1rem;">
+          <!-- EDIT: describe what you built -->
+          A custom Gymnasium environment that wraps an Aspen Plus simulation of the Haber–Bosch
+          process, exposing operating variables as a continuous action space and energy intensity
+          as the reward signal. Trained PPO and SAC agents with Stable-Baselines3 and compared
+          their convergence behavior on the same task.
+        </p>
+        <p style="margin-bottom: 1rem;">
+          <!-- EDIT: add what you learned, what was tricky, what's next -->
+          The interesting part wasn't the agent — it was the env. Aspen runs slowly and isn't
+          trivially differentiable, so reward shaping and observation normalization mattered more
+          than the choice of algorithm.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Gymnasium</span>
+          <span class="tag">Stable-Baselines3</span>
+          <span class="tag">Aspen Plus</span>
+        </div>
+
+        <!-- IMAGE PLACEHOLDER -->
+        <figure>
+          <img src="assets/project-ppo.jpg" alt="PPO ammonia environment" />
+          <figcaption>Custom Gymnasium environment wrapping Aspen Plus.</figcaption>
+        </figure>
+      </section>
+
+      <!-- ========== PROJECT 2 ========== -->
+      <section id="robotics">
+        <div class="section-head">
+          <h2><i class="ti ti-robot" style="color:var(--accent); font-size:22px; margin-right:8px; vertical-align:-3px;" aria-hidden="true"></i>Robotics</h2>
+          <span style="font-size:12px; color:var(--text-faint); font-family:var(--font-mono);">2023 — 2026</span>
+        </div>
+        <p style="margin-bottom: 1rem;">
+          <!-- EDIT: describe your robotics work, role, what you built -->
+          Captain of the school robotics team and member of the national team. Led mechanical
+          design and control software for competition robots — drivetrain layout, sensor
+          integration, and autonomous routines.
+        </p>
+        <p>
+          <!-- EDIT: continue -->
+          The transition from pure hardware to embedded firmware to higher-level autonomy is what
+          made me want to study computer engineering rather than just one of the two halves.
+        </p>
+        <div class="tags" style="margin-top: 1rem;">
+          <span class="tag">C++</span>
+          <span class="tag">embedded</span>
+          <span class="tag">control systems</span>
+          <span class="tag">leadership</span>
+        </div>
+
+        <!-- IMAGE PLACEHOLDER -->
+        <figure>
+          <img src="assets/project-robotics.jpg" alt="Robotics team" />
+          <figcaption>Competition robot during a national-level event.</figcaption>
+        </figure>
+      </section>
+
+      <!-- ========== PROJECT 3 ========== -->
+      <section id="yla-f1">
+        <div class="section-head">
+          <h2><i class="ti ti-steering-wheel" style="color:var(--accent); font-size:22px; margin-right:8px; vertical-align:-3px;" aria-hidden="true"></i>Team YLA · F1 in Schools</h2>
+          <span style="font-size:12px; color:var(--text-faint); font-family:var(--font-mono);">2024 — 2025</span>
+        </div>
+        <p style="margin-bottom: 1rem;">
+          <!-- EDIT: describe role, design choices, results -->
+          Design Engineer and Team Leader for Team YLA in the F1 in Schools / STEM Racing
+          competition. Owned CAD, CFD, and FEA workflows for the car — iterating geometry against
+          aerodynamic and structural targets through dozens of revisions.
+        </p>
+        <p>
+          <!-- EDIT: results, learnings -->
+          Beyond the engineering, leading the team taught me how to make tradeoffs under real
+          deadlines — when to converge, when to keep iterating, when to ship.
+        </p>
+        <div class="tags" style="margin-top: 1rem;">
+          <span class="tag">CAD</span>
+          <span class="tag">CFD</span>
+          <span class="tag">FEA</span>
+          <span class="tag">aerodynamics</span>
+        </div>
+
+        <!-- TWO-IMAGE GRID PLACEHOLDER -->
+        <div class="figure-grid">
+          <figure>
+            <img src="assets/yla-cad.jpg" alt="CAD render of F1 car" />
+            <figcaption>Final CAD render of the Team YLA car.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/yla-cfd.jpg" alt="CFD simulation" />
+            <figcaption>CFD pressure distribution from Ansys Fluent.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== PROJECT 4 ========== -->
+      <section id="magnetic-h2">
+        <div class="section-head">
+          <h2><i class="ti ti-magnet" style="color:var(--accent); font-size:22px; margin-right:8px; vertical-align:-3px;" aria-hidden="true"></i>Magnetic Green Hydrogen</h2>
+          <span style="font-size:12px; color:var(--text-faint); font-family:var(--font-mono);">2024 — ongoing</span>
+        </div>
+        <p style="margin-bottom: 1rem;">
+          <!-- EDIT: describe -->
+          Studying how external magnetic fields influence the kinetics of electrocatalytic water
+          splitting, with a focus on the oxygen evolution reaction. Designing and synthesizing
+          ferromagnetic catalysts and benchmarking their performance with and without applied
+          field.
+        </p>
+        <p>
+          <!-- EDIT: continue -->
+          A small overpotential reduction translates directly into lower electricity cost per
+          kilogram of hydrogen — which is what makes green H₂ economically interesting at scale.
+        </p>
+        <div class="tags" style="margin-top: 1rem;">
+          <span class="tag">electrochemistry</span>
+          <span class="tag">catalyst synthesis</span>
+          <span class="tag">OER</span>
+        </div>
+
+        <!-- IMAGE PLACEHOLDER -->
+        <figure>
+          <img src="assets/project-magnetic.jpg" alt="Magnetic hydrogen setup" />
+          <figcaption>Lab setup for magnetic-field-assisted electrolysis experiments.</figcaption>
+        </figure>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>jeddah → seattle</span>
+      <div class="footer-links">
+        <a href="mailto:you@example.com"><i class="ti ti-mail" aria-hidden="true"></i> email</a>
+        <a href="#"><i class="ti ti-brand-github" aria-hidden="true"></i> github</a>
+        <a href="#"><i class="ti ti-brand-linkedin" aria-hidden="true"></i> linkedin</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
