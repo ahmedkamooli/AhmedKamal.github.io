@@ -33,7 +33,7 @@
   --font-mono:    'Geist Mono', 'SF Mono', Menlo, monospace;
 
   /* Layout */
-  --max-width: 760px;
+  --max-width: 1100px;
   --radius-sm: 6px;
   --radius-md: 10px;
 }
@@ -188,7 +188,7 @@ a:hover { border-bottom-color: var(--accent); }
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 56px;
   margin-bottom: 1.25rem;
 }
 
@@ -298,7 +298,7 @@ section:last-child { margin-bottom: 0; }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 
@@ -350,6 +350,10 @@ section:last-child { margin-bottom: 0; }
   color: var(--text-secondary);
   line-height: 1.6;
   margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
