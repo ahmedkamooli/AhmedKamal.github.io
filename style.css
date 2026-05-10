@@ -46,7 +46,7 @@ body {
   background: var(--bg-base);
   color: var(--text-secondary);
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.75;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -115,16 +115,16 @@ main {
 
 .nav-links {
   display: flex;
-  gap: 1.75rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
 .nav-links a {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.18s ease;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .nav-links a:hover { color: var(--accent); }
@@ -142,10 +142,10 @@ h1, h2, h3, h4 {
   letter-spacing: -0.005em;
 }
 
-h1 { font-size: 38px; margin-bottom: 1rem; }
-h2 { font-size: 24px; margin-bottom: 1.25rem; }
-h3 { font-size: 18px; font-family: var(--font-body); font-weight: 500; }
-h4 { font-size: 15px; font-family: var(--font-body); font-weight: 500; }
+h1 { font-size: 44px; margin-bottom: 1rem; }
+h2 { font-size: 30px; margin-bottom: 1.25rem; }
+h3 { font-size: 20px; font-family: var(--font-body); font-weight: 500; }
+h4 { font-size: 17px; font-family: var(--font-body); font-weight: 500; }
 
 p { margin-bottom: 1rem; }
 p:last-child { margin-bottom: 0; }
@@ -170,10 +170,10 @@ a:hover { border-bottom-color: var(--accent); }
 }
 
 .lead {
-  font-size: 16px;
+  font-size: 19px;
   color: var(--text-secondary);
-  line-height: 1.75;
-  max-width: 580px;
+  line-height: 1.7;
+  max-width: 720px;
 }
 
 /* ============================================
@@ -188,8 +188,9 @@ a:hover { border-bottom-color: var(--accent); }
 }
 
 .hero h1 {
-  font-size: 56px;
-  margin-bottom: 1.25rem;
+  font-size: 72px;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
 }
 
 /* ============================================
@@ -265,16 +266,17 @@ section:last-child { margin-bottom: 0; }
 }
 
 .entry-title {
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 500;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  letter-spacing: -0.005em;
 }
 
 .entry-desc {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
-  line-height: 1.65;
+  line-height: 1.7;
   margin-bottom: 0.5rem;
 }
 
@@ -516,8 +518,99 @@ section:last-child { margin-bottom: 0; }
 .footer-links a:hover { color: var(--accent); border: none; }
 
 /* ============================================
-   ANIMATIONS — staggered fade up on load
+   IMAGES & FIGURES
    ============================================ */
+
+figure {
+  margin: 2rem 0;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--border-subtle);
+}
+
+figcaption {
+  font-size: 13px;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  margin-top: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Two-column image layout */
+.figure-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 2rem 0;
+}
+
+@media (max-width: 700px) {
+  .figure-grid { grid-template-columns: 1fr; }
+}
+
+/* Profile photo on About page */
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.5px solid var(--border-subtle);
+  margin-bottom: 2rem;
+}
+
+/* ============================================
+   HONORS LIST
+   ============================================ */
+
+.honor-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.honor-list li {
+  padding: 1.1rem 0;
+  border-bottom: 0.5px solid var(--border-subtle);
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1.25rem;
+  align-items: baseline;
+}
+
+.honor-list li:last-child { border-bottom: none; }
+
+.honor-year {
+  font-size: 13px;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+}
+
+.honor-title {
+  font-size: 16px;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.honor-issuer {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .honor-list li { grid-template-columns: 1fr; gap: 0.4rem; }
+}
+
+
 
 .fade-in {
   opacity: 0;
